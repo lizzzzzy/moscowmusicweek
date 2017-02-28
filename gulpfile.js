@@ -64,7 +64,7 @@ gulp.task('no-server', function() {
 // Федеральная служба по контролю за оборотом файлов
 gulp.task('watch', function() {
   gulp.watch(paths.templates + '**/*.pug', ['pug']);
-  gulp.watch(paths.styles + '**/*.pcss', ['styles', 'cache']);
+  gulp.watch(paths.styles + '**/*.css', ['styles', 'cache']);
   gulp.watch(paths.scripts + '*.js', ['scripts', 'cache']);
   gulp.watch(paths.img + '*.{png,jpg,gif,svg}', ['img']).on('change', function(event) {
     if (event.type === 'deleted') {
@@ -85,7 +85,7 @@ gulp.task('pug', function() {
 
 // Компиляция стилей, добавление префиксов
 gulp.task('styles', function () {
-  gulp.src(paths.styles + 'layout.pcss')
+  gulp.src(paths.styles + 'layout.css')
     .pipe(plumber({errorHandler: onError}))
     .pipe(postcss(processors))
     .pipe(rename('style.css'))
@@ -95,7 +95,7 @@ gulp.task('styles', function () {
 
 // Lint for god sick 
 gulp.task('styles:lint', function () {
-  gulp.src(paths.styles + '**.pcss')
+  gulp.src(paths.styles + '**.css')
     .pipe(postcss([
       require('stylelint')(),
       require('postcss-reporter')({clearMessages: true})]

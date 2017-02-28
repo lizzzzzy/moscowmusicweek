@@ -1,5 +1,5 @@
 @charset 'UTF-8';
 
 /* Порядок сборки */
-@import 'variables.pcss';
-@import 'default.pcss';
+@import 'variables.css';
+@import 'default.css';
