@@ -3,3 +3,7 @@
 /* Порядок сборки */
 @import 'variables.css';
 @import 'default.css';
+@import 'header.css';
+@import 'main.css';
+@import 'contacts.css';
+@import 'mail.css';

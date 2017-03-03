@@ -1,13 +1,13 @@
-header.header
+header.header.clearfix
   ul.header__social
     li.header__social-item
-      a.hedaer__social-link facebook
+      a.header__social-link.header__social-link--fb facebook
     li.header__social-item
-      a.hedaer__social-link twitter
+      a.header__social-link.header__social-link--tw  twitter
     li.header__social-item
-      a.hedaer__social-link instagram
+      a.header__social-link.header__social-link--inst instagram
     li.header__social-item
-      a.hedaer__social-link vkontakte
+      a.header__social-link.header__social-link--vk vkontakte
   ul.header__list
     li.header__list-item
       a.header__list-link FESTIVAL
@@ -21,7 +21,7 @@ header.header
       a.header__list-link APP 
     li.header__list-item
       a.header__list-link STORE
-  form.header__search
-    input.header__search-input(placeholder=search)
-    button.header__search-button
+  form.header__search(action="#")
+    input.header__search-input(placeholder="search", type="text")
+    button.header__search-button(type="submit")
   

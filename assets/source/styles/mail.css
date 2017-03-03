@@ -1,0 +1,19 @@
+.mail {
+  .main {
+    &__text {
+      font-size: 49px;
+      font-weight: 700;
+    }
+    &__block {
+      font-family: 'HelveticaNeueCyr';
+      font-weight: 400;
+      font-size: 46px;
+      &-text {
+        color: #ffffff;
+      }
+      &-desc {
+        color: #404041;
+      }
+    }
+  }
+}

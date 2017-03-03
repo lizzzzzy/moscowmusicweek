@@ -1,0 +1,30 @@
+.contacts {
+  text-align: left;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 42px;
+  width: 1896px;
+  height: 312px;
+  background-image: url(../img/contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  &__heading {
+    text-transform: uppercase;
+    padding-left: 18px;
+      padding-top: 33px;
+    padding-bottom: 18px;
+  }
+  &__org, &__press{
+    width: 50%;
+    float: left;
+    padding-left: 38px;
+    padding-top: 35px;
+    padding-right: 80px;
+    line-height: 50px;
+    a{
+      text-transform: none;
+      color: #fff;
+    }
+  }
+}
